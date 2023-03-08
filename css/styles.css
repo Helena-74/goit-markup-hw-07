@@ -69,32 +69,31 @@ img {
   color: var(--main-title-color);
 }
 .container {
-  max-width: 1158px;
+  max-width: 428px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 
 .cont-pre {
-  display: flex;
-  align-items: center;
+  display: none;
+
 }
 
 .page-header {
   border-bottom: 1px solid var(--second-btn-color);
 }
 
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-style: "normal";
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-title-color);
-
+  text-decoration: none;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -106,7 +105,129 @@ img {
   flex-grow: 0;
   color: var(--accent-color);
 }
+.hamburger{
+  position: fixed;
+  display: inline-flex;
+  width: 32px; 
+  height: 22px;
+  z-index: 1;
+  margin-right: 24px;
+  margin-left: auto;
+  margin-bottom: 24px;
+  padding: 0;
+  border: none;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  background-color: transparent;
+  
+}
+.mob-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-text-color);
+  padding: 40px 40px;
+  
+}
+.mob-menu > .container-mob {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+.container-mob {
 
+}
+.mob-close {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 16px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--second-btn-color);
+
+}
+.mob-nav {
+  margin-top: 16px;
+  padding: 0;   
+}
+.mob-list {
+  margin-bottom: 40px;
+}
+.mob-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mob-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--second-title-color);
+  }
+.link-current {
+}
+.mob-cont {
+  
+}
+.mob-address {
+  margin-bottom: 48px;
+}
+.mob-tel {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.11;
+  text-transform: capitalize;
+  color: var(--accent-color);
+  margin-bottom: 40px;
+}
+.mob-email {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+  
+}
+.link {
+}
+.icon-social {
+}
+.mob-soc-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.mob-soc-title{
+  width: 40px;
+  height: 40px;
+}
+.mob-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+}
+.section-soc-link:is(:hover,:focus) {
+  background-color: var(--text-accent-company);
+}
 
 /*Hero*/
 .hero-title {
@@ -138,7 +259,16 @@ img {
       ), url(../images/Dark-bg-mob2x.jpg);
   }
 }
-
+.hero-pre-title {
+  font-weight: 700;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
 
 /*Button*/
 .hero-btn-activ {
@@ -352,10 +482,11 @@ background-color: var(--accent-color);
   display: flex;
   justify-content: center;
 
-  gap: 72px 24px;
+  gap: 16px;
 }
 .section-comp-title {
-  width: calc((100%-120px)/6);
+
+  width: calc((100%-48px)/2);
   height: 88px;
 }
 .icon-company-link {
@@ -365,7 +496,6 @@ background-color: var(--accent-color);
 .icon-company{
   width: 100%;
   height: 100%;
-
   border: 1px solid var(--text-company-color);
   border-radius: 4px;
   display: flex;
@@ -475,7 +605,7 @@ transition: transform 300ms linear opacity 300ms linear;
   background: var(--second-title-color);
 }
 .footer-container {
-  display: flex;
+  flex-direction: column;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;

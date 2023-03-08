@@ -30,12 +30,13 @@
   <!--main page-->
   <body class="page">
     <header class="page-header">
-      <div class="container cont-pre">
+      <div class="container">
         <nav class="nav">
           <a href="./index.html" class="logo link"
             ><span class="span">Web</span>Studio</a
           >
-
+          
+          <div class="cont-pre">
           <ul class="site-nav list">
             <li class="item"><a href="" class="link link-current">Studio</a></li>
             <li class="item">
@@ -43,9 +44,10 @@
             </li>
             <li class="item"><a href="" class="link">Contacts</a></li>
           </ul>
+        </div>
         </nav>
 
-        <address>
+        <address class="cont-pre">
           <ul class="site-address list">
             <li class="item">
               <a class="site-address link" href="mailto:info@devstudio.com"
@@ -59,7 +61,60 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="hamburger" data-menu-open>
+          <svg width="32" height="22">
+            <use href="./images/icons.svg#hamburger"></use>
+          </svg>
+        </button>
       </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container-mob">
+          <div>
+          <button type="button" class="mob-close" data-menu-close>
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <ul class="mob-nav mob-list">
+          <li class="mob-item"><a href="" class="mob-link link-current">Studio</a></li>
+          <li class="mob-item">
+            <a href="./portfolio.html" class="mob-link">Portfolio</a>
+          </li>
+          <li class="mob-item"><a href="" class="mob-link">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="mob-cont">
+        <ul class="mob-address mob-list">
+          <li class="mob-item">
+            <a class="mob-tel" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="mob-item">
+            <a class="mob-email" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mob-soc-list mob-list">
+          <li class="mob-soc-title"><a href="" class="mob-soc-link link">
+            <svg class="icon-social" width="16" height="16">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a></li>
+          <li class="mob-soc-title"><a href="" class="mob-soc-link link"><svg class="icon-social" width="16" height="16">
+            <use href="./images/icons.svg#twitter"></use>
+          </svg></a></li>
+          <li class="mob-soc-title"><a href="" class="mob-soc-link link"><svg class="icon-social" width="16" height="16">
+            <use href="./images/icons.svg#facebook"></use>
+          </svg></a></li>
+          <li class="mob-soc-title"><a href="" class="mob-soc-link link"><svg class="icon-social" width="16" height="16">
+            <use href="./images/icons.svg#linkedin"></use>
+          </svg></a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
     </header>
     <main>
       <!--hero-->
@@ -72,7 +127,7 @@
         </div>
       </section>
 
-      <section class="section">
+       <section class="section"> 
         <div class="container">
           <h2 class="visually-hidden">text</h2>
           <ul class="list">
@@ -270,7 +325,7 @@
 
     </main>
     <!--Footer-->
-    <footer class="footer">
+     <footer class="footer"> 
       <div class="container footer-container">
         <div class="cont-logo">
         <a href="./index.html" class="footer-logo link"
@@ -301,9 +356,9 @@
             <use href="./images/icons.svg#linkedin"></use>
           </svg></a></li>
         </ul>
-      </div>
+      </div>    
       <!--Subscribe-->
-      <div class="footer-subscribe">
+       <div class="footer-subscribe"> 
         <b class="footer-team-title">Subscribe</b>
         <form action="#" class="footer-form">
         <label for="email" class="subscribe-text"></label>
@@ -319,9 +374,9 @@
         </form>
       </div>
     </div>
-    </footer>
+    </footer>     
     <!--Modal window-->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal> 
       <div class="modal">
         <button type="button" class="modal-button" data-modal-close>
           <svg class="" width="8" height="8">
@@ -375,12 +430,13 @@
           <button type="submit" class="button-modal">Send</button>
         </form>
       </div>
-    </div>
+    </div>    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
 
