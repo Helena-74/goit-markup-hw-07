@@ -168,13 +168,14 @@ body {
 .mob-list {
   margin-bottom: 40px;
 }
+
 .mob-item:not(:last-child) {
   margin-bottom: 40px;
 }
 .mob-link {
   text-decoration: none;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -190,7 +191,7 @@ body {
 .mob-tel {
   text-decoration: none;
   font-weight: 600;
-  font-size: 26px;
+  font-size: 36px;
   line-height: 1.11;
   text-transform: capitalize;
   color: var(--accent-color);
@@ -376,7 +377,7 @@ body {
 }
 
 .section-link {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -532,14 +533,23 @@ body {
 }
 
 /*Portfolio*/
+.section {
+  padding: 120px 0;
+  color: var(--main-text-color);
+}
+.section .item {
+}
+.section .item + .item {
+  margin-left: 24px;
+}
 .section-pre {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .section-pre-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 72px;
+  margin-bottom: 48px;
 }
 
 .gallery-cover:hover .gallery-text {
@@ -555,7 +565,24 @@ body {
   position: relative;
   overflow: hidden;
 }
-
+.section-title-gallery {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--second-title-color);
+  margin-bottom: 8px;
+}
+.section-link-gallery {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+  
+}
 .gallery-text {
   position: absolute;
   width: 360px;
@@ -563,7 +590,6 @@ body {
   top: 0;
   padding: 40px;
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -588,13 +614,19 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.section-portfolio .section-list-item + .section-list-item {
-  margin-left: 24px;
+/* .section-portfolio .section-list-item + .section-list-item { 
+  margin-top: 48px;
+ } */
+.section-list-item {
+  margin-bottom: 48px;
+  background: var(--main-text-color);
+  width: 300px;
+  height: auto;
 }
 
-.section-portfolio .section-list-item + .section-list-item:nth-child(3n + 1) {
+/* .section-portfolio .section-list-item + .section-list-item:nth-child(3n + 1) { 
   margin-left: 0;
-}
+ } */
 
 /*Footer*/
 

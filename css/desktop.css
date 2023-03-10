@@ -90,6 +90,27 @@
   display: flex;
   gap: 24px;
 }
+/* -------------------PORTFOLIO ----------------------- */
+.section-pre {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.section-pre-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+.section-portfolio .section-list-item + .section-list-item {
+  padding-left: 24px;
+  padding-bottom: 48px;
+}
+.section-list-item {
+  margin-bottom: 48px;
+  background: var(--main-text-color);
+  width: 360px;
+  height: auto;
+}
 /* ------------------- FOOTER  ------------------------ */
 .cont-logo {
   margin-right: 120px;

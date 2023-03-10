@@ -165,6 +165,7 @@ img {
 .mob-item:not(:last-child) {
   margin-bottom: 40px;
 }
+@media screen and (max-width: 428px) {
 .mob-link {
   text-decoration: none;
   font-weight: 700;
@@ -174,6 +175,7 @@ img {
   text-transform: capitalize;
   color: var(--second-title-color);
   }
+}
 .link-current {
 }
 .mob-cont {
@@ -182,6 +184,7 @@ img {
 .mob-address {
   margin-bottom: 48px;
 }
+@media screen and (max-width: 428px) {
 .mob-tel {
   text-decoration: none;
   font-weight: 600;
@@ -190,6 +193,7 @@ img {
   text-transform: capitalize;
   color: var(--accent-color);
   margin-bottom: 40px;
+}
 }
 .mob-email {
   text-decoration: none;
