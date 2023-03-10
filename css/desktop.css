@@ -105,6 +105,22 @@
   padding-left: 24px;
   padding-bottom: 48px;
 }
+.gallery-text {
+  position: absolute;
+  width: 360px;
+  height: 300px;
+  top: 0;
+  padding: 40px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--background-color);
+  background-color: var(--accent-color);
+  transform: translateY(100%);
+  transition: transform 300ms linear opacity 300ms linear;
+}
 .section-list-item {
   margin-bottom: 48px;
   background: var(--main-text-color);
