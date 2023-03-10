@@ -550,7 +550,9 @@ body {
 }
 .section-pre-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 16px 24px;
   margin-bottom: 48px;
 }
 
