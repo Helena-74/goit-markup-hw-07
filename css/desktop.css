@@ -101,10 +101,10 @@
   justify-content: center;
   margin-bottom: 72px;
 }
-.section-portfolio .section-list-item + .section-list-item {
-  padding-left: 24px;
-  padding-bottom: 48px;
-}
+/* .section-portfolio .section-list-item + .section-list-item { */
+  /* gap: 24px; */
+  
+/* } */
 .gallery-text {
   position: absolute;
   width: 360px;
